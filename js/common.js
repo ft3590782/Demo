@@ -75,4 +75,17 @@ $("#menu-icon,#blockbg").click(function(event) {
   $("#divADBox .owl-custom-prev").click(function(){
     owlbanner.trigger('owl.prev');
   })
+
+
+  $(window).resize(function(event) {
+    /* Act on the event */
+    var winwidth=$(this).width();
+    if(winwidth>1280)
+    {
+$("#menu-small").slideUp('fast');
+    $("#blockbg").fadeOut('fast');
+
+    }
+  });
 })
+

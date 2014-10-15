@@ -33,12 +33,13 @@ h3{ padding: 2.5em 0; font-size: 2.5em;}
 {
     width: 90%;
     margin: 0 auto;
+     height: 115px;
 }
 #logo
 {
-    width: 24%;
-    min-width: 18em; 
-    margin-top: .5em;
+    width: 294px; 
+    margin-top: 16px;
+    margin-left: 13px;
 }
 #menu
 {
@@ -59,6 +60,13 @@ h3{ padding: 2.5em 0; font-size: 2.5em;}
     color: #3b5b59;
 }
 
+#menu li a:hover
+{
+    color: #fff;
+     background: #3b5b59;
+}
+
+
 #menu-small{ display:none; position: absolute; z-index: 5;width: 100%; margin:0; 
  background: #fff;  top: 0px;
 }
@@ -67,7 +75,7 @@ h3{ padding: 2.5em 0; font-size: 2.5em;}
 
 #menu-small li{
    background: url(../images/menu_shadow.png) no-repeat center bottom;
- background-size: 100%;
+
 
 }
 
@@ -110,7 +118,7 @@ background: url(../images/menu_shadow.png) no-repeat;
 {
     position: relative;
  width: 100%;
-    margin: 1em 0;
+ 
 }
 .banner li{width: 100%;}
 .banner li a{width: 100%;}
@@ -198,10 +206,15 @@ text-align: center;}
 
 }
 .banner .owl-controls .owl-page span{
+ background: none;
+     border:2px solid #3b5b59;
 
-     background: #3b5b59;
 }
 
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+ background: #3b5b59
+
+}
 /*banner end*/
 
 /*carousel start*/
@@ -257,9 +270,11 @@ padding: 31px 18px;
 /*text framework*/
 .text-wrapper{width: 95%;
 text-align: center;
-margin: 0 auto;
+margin: .5em auto 0;
 display: block;
-float: none;  }
+float: none;  
+
+}
 .fa:hover{ text-decoration: underline;}
 /*other element*/
 
@@ -272,8 +287,6 @@ float: none;  }
 @media screen and (max-width: 1440px){
     #head{width: 100%;}
     #menu{width: 65%; float: left; font-size: .75em; margin-left: 3%; }
-    #logo{margin-left: 3%}
-
     .mycarousel .mycarousel-list { width: 990px; }
 }
 
@@ -342,17 +355,21 @@ float: none;  }
         padding: .5em 0;
     }
 
-    .banner .dots
-    {
-        top: -15%;
-    }
+#head{height: 67px;}
+
     #logo
     {
         display: block;
         float: none;
-
+        max-width: 12em;
         min-width: 12em;
         margin: 3% auto 0;
+
+    }
+
+        .banner .dots
+    {
+        top: -15%;
     }
     .mycarousel .mycarousel-list
     {

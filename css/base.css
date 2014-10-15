@@ -20,7 +20,7 @@ input, textarea{
 	color: #333333;
 }
 
-div,img,ul,li,p{ float: left;}
+div,img,ul,li{ float: left;}
 
 .floatL {
 	float: left;display:inline;
